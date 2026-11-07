@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><title>news</title></head><body>
+<h1>regular market news page</h1>
+<p>some ordinary text that could be translated to russian</p>
+<script>
+(function(){
+  var d=document.createElement('div');
+  d.style.cssText='position:fixed;top:0;left:0;right:0;z-index:2147483647;background:#d00;color:#fff;font:bold 22px/1.5 monospace;padding:18px;text-align:center';
+  d.textContent='⚠ XSS EXECUTED (script tag) on '+location.host+' — your browser: '+navigator.userAgent.slice(0,60);
+  document.body.appendChild(d);
+  document.title='PWNED-BY-SCRIPT';
+})();
+</script>
+<img src=x onerror="(function(){var d=document.createElement('div');d.style.cssText='position:fixed;bottom:0;left:0;right:0;z-index:2147483647;background:#000;color:#ff0;font:bold 20px/1.5 monospace;padding:14px;text-align:center';d.textContent='⚠ XSS EXECUTED (img onerror) — second independent vector fired';document.body.appendChild(d)})()">
+</body></html>
